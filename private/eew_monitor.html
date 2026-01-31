@@ -311,10 +311,10 @@ xhr.landslides.onload = function(){
 }
 xhr.areas.send();
 
-const eewsound = new Audio("https://md-ndv356.github.io/private/eew.mp3");
+const eewsound = new Audio("https://looksky495.github.io/private/eew.mp3");
 function loadjson(){
   let res = new XMLHttpRequest();
-//  alert("load"); 
+//  alert("load");
   time = (new Date()).getTime();
   res.addEventListener("load",function(){
     data = JSON.parse(this.responseText);
@@ -348,7 +348,7 @@ function main(){
     xhr.warnList.send();
     wrnTime = cct;
   }
-  
+
   sub.front(cct);
   let menuCurrent = menuAnim.current;
   ctx.save();
@@ -371,7 +371,7 @@ function main(){
   ctx.fillText(JSON.stringify(options.current), 240, 670);
   ctx.fillText(JSON.stringify(options.select), 240, 720);
   ctx.restore();
-  
+
   ctx.font = "15px Arial,Sans-serif";
   ctx.fillStyle = "#fff";
   if(!data.Warn) ctx.fillText("NaturalDisasterViewer/EEW_monitor v0.0.0β",1590,1075);
@@ -613,7 +613,7 @@ navigator.clipboard.writeText(options.info.eew[options.select.x].raw.join("\n"))
 });
                       break;
                     case -3:
-                      
+
                       break;
                     default:
                       options.select.y = 0;
